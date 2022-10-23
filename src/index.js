@@ -5,14 +5,17 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 
 function Greeting() {
-    const married = true
-    // if (married) {
-    //     return <h1>Estoy Casado</h1>
-    // } else {
-    //     return <h1>No Estoy Casado</h1>
-    // }
+    const user = {
+        firstName: 'Ryan',
+        lastName: 'Ray'
+    }
 
-    return <h1>{married ? 'estoy casado 😍' : 'no lo estoy 🤣'}</h1>
+    // return <h1>{user.firstName}</h1>
+    // return <h1>{JSON.stringify(user)}</h1>
+    return <div>
+        <h1>{user.firstName}</h1>
+        <h3>{user.lastName}</h3>
+    </div>
 }
 
 

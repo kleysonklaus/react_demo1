@@ -5,17 +5,17 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 
 function Greeting() {
-    return <div>
-        <h1>Este es un componente</h1>
-        <p>lorem 123</p>
-    </div>
+    const married = true
+    // if (married) {
+    //     return <h1>Estoy Casado</h1>
+    // } else {
+    //     return <h1>No Estoy Casado</h1>
+    // }
+
+    return <h1>{married ? 'estoy casado 😍' : 'no lo estoy 🤣'}</h1>
 }
 
-root.render(<div>
+
+root.render(
     <Greeting />
-    <Greeting />
-    <Greeting />
-    <Greeting />
-    <Greeting />
-    <Greeting />
-</div>)
+)

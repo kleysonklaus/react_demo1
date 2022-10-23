@@ -5,20 +5,22 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 
 function Greeting() {
-    const user = {
-        firstName: 'Ryan',
-        lastName: 'Ray'
+    function add(x, y) {
+        return x + y
     }
-
     // return <h1>{user.firstName}</h1>
     // return <h1>{JSON.stringify(user)}</h1>
-    return <div>
-        <h1>{user.firstName}</h1>
-        <h3>{user.lastName}</h3>
-    </div>
+    return <>
+        <h1>{add(10, 30)}</h1>
+        <h1>{add(10, 30)}</h1>
+    </>
+
 }
 
 
-root.render(
+root.render(<>
     <Greeting />
+    <Greeting />
+    <Greeting />
+</>
 )

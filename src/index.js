@@ -1,12 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Greeting, UserCard } from './greeting'
+
+import Product, { NavBar } from './product'
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(<>
     <Greeting />
     <UserCard />
-    <Greeting />
-    <Greeting />
+    <Product />
+    <NavBar />
 </>
 )

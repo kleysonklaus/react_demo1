@@ -7,8 +7,8 @@ import Product, { NavBar } from './product'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(<>
-    <Greeting title="hola" />
-    <Greeting title="kleyson" />
+    <Greeting title="hola" name="aguas" />
+    <Greeting title="kleyson" name="mareas" />
     <Greeting title="klaus" />
     <Greeting title="altura" />
     <Greeting title="rojo" />

@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 
-export function Button({ text }) {
+export function Button({ text, name }) {
     return <button>
-        {text}
+        {text} - {name}
     </button>
 }
 
@@ -11,3 +11,8 @@ Button.propTypes = {
 }
 
 // to use required: se necesita un paquete npm prop-types
+
+// this is other form to make default value
+Button.defaultProps = {
+    name: "Some user"
+}

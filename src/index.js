@@ -11,7 +11,7 @@ root.render(<>
 
     <Button text="click me" />
     <Button text="pay" />
-    <Button text="requerido " />
+    <Button text="requerido" name="alex" />
 
     {/* <UserCard
         name="ryan"

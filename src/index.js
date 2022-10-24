@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Greeting, UserCard } from './Greeting'
+import { Button } from './Button'
 
 import Product, { NavBar } from './product'
 
@@ -8,7 +9,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(<>
 
-    <UserCard
+    <Button />
+
+    {/* <UserCard
         name="ryan"
         amount={3000}
         married={true}
@@ -23,6 +26,6 @@ root.render(<>
         points={[12, 45]}
         address={{ street: "av some where", city: "New York" }}
         greet={function () { alert("hola") }}
-    />
+    /> */}
 </>
 )

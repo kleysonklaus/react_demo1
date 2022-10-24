@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Greeting, UserCard } from './greeting'
+import { Greeting, UserCard } from './Greeting'
 
 import Product, { NavBar } from './product'
 

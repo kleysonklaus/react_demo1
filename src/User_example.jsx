@@ -1,0 +1,1 @@
+// este tipo de archivo es opcional para react-create-app

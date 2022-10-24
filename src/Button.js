@@ -7,7 +7,7 @@ export function Button({ text }) {
 }
 
 Button.propTypes = {
-    text: PropTypes.string
+    text: PropTypes.string.isRequired
 }
 
 // to use required: se necesita un paquete npm prop-types

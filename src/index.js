@@ -8,10 +8,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(<>
     <Greeting title="hola" />
-    <Greeting x="bye" />
-    <Greeting y={30} />
-    <Greeting z={true} />
-    <Greeting a={[1, 2, 3]} />
+    <Greeting title="kleyson" />
+    <Greeting title="klaus" />
+    <Greeting title="altura" />
+    <Greeting title="rojo" />
     {/* <UserCard />
     <Product />
     <NavBar /> */}

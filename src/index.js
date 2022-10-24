@@ -7,11 +7,7 @@ import Product, { NavBar } from './product'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(<>
-    {/* <Greeting title="hola" name="aguas" />
-    <Greeting title="kleyson" name="mareas" />
-    <Greeting title="klaus" />
-    <Greeting title="altura" />
-    <Greeting title="rojo" /> */}
+
     <UserCard
         name="ryan"
         amount={3000}
@@ -20,7 +16,13 @@ root.render(<>
         address={{ street: "main street", city: "NY" }}
         greet={function () { alert("hola") }}
     />
-    {/* <Product />
-    <NavBar /> */}
+    <UserCard
+        name="usuario 2"
+        amount={1000}
+        married={false}
+        points={[12, 45]}
+        address={{ street: "av some where", city: "New York" }}
+        greet={function () { alert("hola") }}
+    />
 </>
 )

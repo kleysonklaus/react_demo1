@@ -9,7 +9,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(<>
 
-    <Button />
+    <Button text="click me" />
+    <Button text="pay" />
+    <Button text="go to " />
 
     {/* <UserCard
         name="ryan"

@@ -1,5 +1,7 @@
-export function Button() {
+export function Button({ text }) {
     return <button>
-        Mi boton
+        {text}
     </button>
 }
+
+// to use required: se necesita un paquete npm prop-types

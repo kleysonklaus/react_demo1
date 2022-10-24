@@ -7,9 +7,13 @@ import Product, { NavBar } from './product'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(<>
-    <Greeting />
-    <UserCard />
+    <Greeting title="hola" />
+    <Greeting x="bye" />
+    <Greeting y={30} />
+    <Greeting z={true} />
+    <Greeting a={[1, 2, 3]} />
+    {/* <UserCard />
     <Product />
-    <NavBar />
+    <NavBar /> */}
 </>
 )

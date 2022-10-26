@@ -5,7 +5,7 @@ export function TaskCard({ ready }) {
 
     return <div className='card'>
         <h1>Mi primer tarea</h1>
-        <p><span>{ready === true ? 'Tarea Realizada' : 'Tarea Pendiente'}</span></p>
+        <p><span>{ready ? 'Tarea Realizada' : 'Tarea Pendiente'}</span></p>
     </div>
 
 }

@@ -12,6 +12,9 @@ root.render(<>
 
     <TaskCard ready={false} />
     <Saludar />
-    <Button />
+    <Button text='saludar' />
+    <input onChange={function (e) {
+        console.log(e.target.value)
+    }} />
 </>
 )

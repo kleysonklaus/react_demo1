@@ -8,13 +8,15 @@ import { Saludar } from './Saludar'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
+const handleChange = (e) => {
+    console.log(e.target.value)
+}
+
 root.render(<>
 
     <TaskCard ready={false} />
     <Saludar />
     <Button text='saludar' />
-    <input onChange={(e) => {
-        console.log(e.target.value)
-    }} />
+    <input onChange={handleChange} />
 </>
 )

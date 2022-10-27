@@ -19,8 +19,9 @@ root.render(<>
     <Button text='saludar' />
     <input onChange={handleChange} />
 
-    <form onSubmit={() => {
-        console.log("enviando datos del form")
+    <form onSubmit={(e) => {
+        e.preventDefault()
+        console.log("enviado")
     }}>
         <h1>Registro de usuario</h1>
         <button>Send</button>

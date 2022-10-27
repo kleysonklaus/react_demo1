@@ -18,5 +18,6 @@ root.render(<>
     <Saludar />
     <Button text='saludar' />
     <input onChange={handleChange} />
+    <input onDoubleClick={() => console.log('double click')} />
 </>
 )

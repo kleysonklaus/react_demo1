@@ -18,6 +18,13 @@ root.render(<>
     <Saludar />
     <Button text='saludar' />
     <input onChange={handleChange} />
-    <input onDoubleClick={() => console.log('double click')} />
+
+    <form onSubmit={() => {
+        console.log("enviando datos del form")
+    }}>
+        <h1>Registro de usuario</h1>
+        <button>Send</button>
+    </form>
+
 </>
 )

@@ -12,5 +12,6 @@ root.render(<>
 
     <TaskCard ready={false} />
     <Saludar />
+    <Button />
 </>
 )

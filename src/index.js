@@ -31,6 +31,5 @@ root.render(<>
             </div>
         })
     }
-    {/* <Posts /> */}
 </>
 )

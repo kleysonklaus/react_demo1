@@ -5,6 +5,7 @@ import { Button } from './Button'
 import { TaskCard } from './Task'
 import Product, { NavBar } from './product'
 import { Saludar } from './Saludar'
+import { Posts } from './Posts'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -13,19 +14,8 @@ const handleChange = (e) => {
 }
 
 root.render(<>
+    <Posts />
 
-    <TaskCard ready={false} />
-    <Saludar />
-    <Button text='saludar' />
-    <input onChange={handleChange} />
-
-    <form onSubmit={(e) => {
-        e.preventDefault()
-        console.log("enviado")
-    }}>
-        <h1>Registro de usuario</h1>
-        <button>Send</button>
-    </form>
 
 </>
 )

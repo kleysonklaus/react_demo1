@@ -1,21 +1,28 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Greeting, UserCard } from './Greeting'
-import { Button } from './Button'
-import { TaskCard } from './Task'
-import Product, { NavBar } from './product'
-import { Saludar } from './Saludar'
 import { Posts } from './Posts'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-const handleChange = (e) => {
-    console.log(e.target.value)
-}
+const users = [
+    {
+        id: 1,
+        nombre: 'ryan rey',
+        image: 'https://robohash.org/user1'
+    },
+    {
+        id: 2,
+        nombre: 'joe',
+        image: 'https://robohash.org/user2'
+    }
+]
 
 root.render(<>
-    <Posts />
-
-
+    {
+        users.map((user, index) => {
+            return <h1 key={index}>{user.nombre}</h1>
+        })
+    }
+    {/* <Posts /> */}
 </>
 )

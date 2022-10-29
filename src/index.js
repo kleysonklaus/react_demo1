@@ -19,6 +19,14 @@ function Counter() {
         }>
             Sumar
         </button>
+        <button onClick={
+            () => {
+                console.log(counter)
+                setCounter(counter - 1)
+            }
+        }>
+            Restar
+        </button>
     </>
 }
 

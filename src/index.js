@@ -11,7 +11,8 @@ function Counter() {
 
     useEffect(() => {
         console.log("render")
-    })
+    }, [])
+    // con el arreglo vacio solo se ejecutara una vez
 
     return <>
         <div>

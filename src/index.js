@@ -27,6 +27,14 @@ function Counter() {
         }>
             Restar
         </button>
+        <button onClick={
+            () => {
+                console.log(0)
+                setCounter(0)
+            }
+        }>
+            Reiniciar
+        </button>
     </>
 }
 

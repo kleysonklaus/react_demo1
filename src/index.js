@@ -7,14 +7,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 function Counter() {
 
+    const [counter, setCounter] = useState(0)
 
-    let counter = 10
     return <>
         <h1>Counter : {counter}</h1>
         <button onClick={
             () => {
-                counter = counter + 1
                 console.log(counter)
+                setCounter(counter + 1)
             }
         }>
             Sumar

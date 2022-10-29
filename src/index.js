@@ -12,7 +12,7 @@ function Counter() {
 
     useEffect(() => {
         console.log("render")
-    }, [])
+    }, [counter])
     // con el arreglo vacio solo se ejecutara una vez
 
     return <>

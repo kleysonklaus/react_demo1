@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import { Posts } from './Posts'
 
@@ -8,6 +8,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 function Counter() {
 
     const [mensaje, setMensaje] = useState('')
+
+    useEffect(() => {
+        console.log("render")
+    })
 
     return <>
         <div>
